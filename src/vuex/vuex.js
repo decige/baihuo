@@ -1,5 +1,18 @@
-import {createStore } from 'vuex'
+import {createStore } from 'vuex';
 //vuex的核心作用就是帮我们管理组件之间的状态（数据）
+// 修正导入路径（注意添加正确的文件扩展名）
+import image01 from '../assets/images/001.jpg';
+import image02 from '../assets/images/002.jpg';
+import image03 from '../assets/images/003.jpg';
+import image04 from '../assets/images/004.jpg';
+import image05 from '../assets/images/005.jpg';
+import image06 from '../assets/images/006.jpg';
+import image07 from '../assets/images/007.jpg';
+import image08 from '../assets/images/008.jpg';
+import image09 from '../assets/images/009.jpg';
+import image10 from '../assets/images/010.jpg';
+
+
 const store=createStore({
 //所有的状态（数据）都放在state里面
 state:{
@@ -13,7 +26,7 @@ state:{
         price: 8999,
         //在 Vue 组件模板中使用 @/assets/xxx.jpg 没问题，
         //但是在 Vuex store 或 JS 文件中直接使用 @/assets/xxx.jpg 是不会被 Webpack/Vite 自动解析的！
-        imageUrl: "src/assets/images/001.jpg",
+        imageUrl: image01,
         stock: 50,
         category: "手机"
       },
@@ -22,7 +35,7 @@ state:{
         name: "华为 Mate 60",
         description: "国产旗舰手机，麒麟芯片，鸿蒙系统",
         price: 6499,
-        imageUrl: "src/assets/images/002.jpg",
+        imageUrl: image02,
         stock: 30,
         category: "手机"
       },
@@ -31,7 +44,7 @@ state:{
         name: "小米电视 6",
         description: "4K超高清智能电视，全面屏设计",
         price: 4999,
-        imageUrl: "src/assets/images/003.jpg",
+        imageUrl: image03,
         stock: 20,
         category: "家电"
       },
@@ -40,7 +53,7 @@ state:{
         name: "戴森吸尘器 V15",
         description: "强劲吸力，无线设计，适合家庭清洁",
         price: 3499,
-        imageUrl: "src/assets/images/004.jpg",
+        imageUrl: image04,
         stock: 10,
         category: "家电"
       },
@@ -49,7 +62,7 @@ state:{
         name: "耐克 Air Max 运动鞋",
         description: "经典缓震系列，舒适透气，适合日常穿着",
         price: 899,
-        imageUrl: "src/assets/images/005.jpg",
+        imageUrl: image05,
         stock: 100,
         category: "鞋服"
       },
@@ -58,7 +71,7 @@ state:{
       name: "索尼 WH-1000XM5 耳机",
       description: "行业领先的降噪技术，长达30小时的电池续航",
       price: 2999,
-       imageUrl: "src/assets/images/006.jpg",
+       imageUrl: image06,
       stock: 45,
       category: "耳机"
     },
@@ -67,7 +80,7 @@ state:{
       name: "佳能 EOS R5 相机",
       description: "专业级全画幅无反光镜相机，支持8K视频录制",
       price: 26999,
-       imageUrl: "src/assets/images/007.jpg",
+       imageUrl: image07,
       stock: 15,
       category: "相机"
     },
@@ -76,7 +89,7 @@ state:{
       name: "联想拯救者 Y9000X 笔记本电脑",
       description: "高性能游戏笔记本，搭载Intel i7处理器和RTX 3060显卡",
       price: 9999,
-      imageUrl: "src/assets/images/008.jpg",
+      imageUrl: image08,
       stock: 25,
       category: "电脑"
     },
@@ -85,7 +98,7 @@ state:{
       name: "飞利浦空气净化器 AC2889",
       description: "高效过滤PM2.5，去除甲醛，净化空气",
       price: 2399,
-      imageUrl: "src/assets/images/009.jpg",
+      imageUrl: image09,
       stock: 50,
       category: "家电"
     },
@@ -94,7 +107,7 @@ state:{
       name: "乐高星球大战千年隼号",
       description: "高度细节还原的千年隼号模型，包含7500多个零件",
       price: 5999,
-       imageUrl: "src/assets/images/010.jpg",
+       imageUrl: image10,
       stock: 10,
       category: "玩具"
     }
