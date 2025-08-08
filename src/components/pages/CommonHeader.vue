@@ -1,6 +1,6 @@
 <template>
     <a-layout-header>
-      <div class="logo">2203010306陈春溢</div>
+      <div class="logo">吃蛋糕了</div>
       <a-menu  theme="dark" mode="horizontal" :style="{ lineHeight: '64px' }" @click="handleMenuClick">
         <a-menu-item key="1">用户管理</a-menu-item>
         <a-menu-item key="2">商品订单记录</a-menu-item>
